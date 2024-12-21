@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Matrix Code Effect
 
-## Getting Started
+一个基于 Next.js 实现的黑客帝国风格代码雨效果展示页面。
 
-First, run the development server:
+## 🌟 特性
+
+### 1. 代码雨效果
+- 流畅的字符下落动画
+- 渐变色和发光效果
+- 随机透明度变化
+- 自适应窗口大小
+- 使用 Canvas 实现高性能渲染
+
+### 2. 文本显示效果
+- 打字机效果（150ms/字符）
+- 自动循环显示10条经典引用
+- 显示完成后3秒停留时间
+- 带有故障艺术效果的标题
+- 优雅的文本切换动画
+
+### 3. 视觉设计
+- Matrix风格的绿色主题
+- 文本发光效果
+- 半透明背景
+- 故障艺术动画
+- 响应式布局
+
+## 🚀 技术栈
+
+- Next.js 15.0.2
+- React 19.0.0
+- TypeScript
+- Canvas API
+- Tailwind CSS
+
+## 📦 安装
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# 克隆项目
+git clone [your-repository-url]
+
+# 进入项目目录
+cd nextjs-boilerplate
+
+# 安装依赖
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔧 使用
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# 开发模式
+npm run dev
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# 构建项目
+npm run build
 
-## Learn More
+# 运行生产版本
+npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 💡 自定义配置
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 代码雨效果调整
+- `fontSize`: 调整字符大小（当前16px）
+- `characters`: 修改显示字符集
+- 透明度范围：0.1-0.9
+- 发光效果：shadowBlur = 15
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 文本显示调整
+- 打字速度：150ms/字符
+- 显示停留时间：3000ms
+- 文本大小：2xl（Tailwind类）
+- 字体：等宽字体（monospace）
 
-## Deploy on Vercel
+### 样式定制
+- 主题色：#0F0（Matrix绿）
+- 背景：rgba(0, 0, 0, 0.5)
+- 文本发光：text-shadow: 0 0 5px #0F0
+- 故障艺术效果可调整
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📝 引用文本列表
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+当前包含以下10条富有哲理的引用：
+1. "现实，只不过是电信号在你大脑中产生的电化学反应。"
+2. "选择相信什么，就是你的自由。"
+3. "无知即力量，但知识就是一切。"
+4. "系统中的漏洞，往往源于设计者的完美主义。"
+5. "代码如诗，循环往复，却蕴含无限可能。"
+6. "真相如同代码，隐藏在表象之下。"
+7. "在数字世界里，我们都是数据的诗人。"
+8. "每一个 Bug 都是通向完美的路标。"
+9. "算法，是这个世界最真实的魔法。"
+10. "在矩阵中，限制你的只有想象力。"
+
+## 🔜 未来计划
+
+- [ ] 添加手动切换按钮
+- [ ] 实现暂停/继续功能
+- [ ] 添加鼠标悬停效果
+- [ ] 支持自定义引用文本
+- [ ] 添加更多动画效果
+- [ ] 优化移动端显示
+
+## 📄 许可证
+
+MIT License
